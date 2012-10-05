@@ -1,0 +1,9 @@
+# .gitingore for jekyll
+
+_site
+_sass/.sass-cache
+.sass-cache
+
+# SublimeText project files
+/*.sublime-project
+*.sublime-workspace
