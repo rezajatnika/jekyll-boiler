@@ -1,10 +1,22 @@
+# Rakefile for jekyll-boiler use rake -T to list tasks
+
+# Default task
+task :default => :build
+
+# Clean up generated site in _site folder, rake clean
+desc 'Clean up generated site'
+task :clean do
+  clean
+end
+
+# Generate site to _site folder, rake build
 desc 'Build site with Jekyll'
 task :build do
   compass
   jekyll
 end
 
-# rake post[post-title]
+# Create a new post, rake post[post-title]
 desc 'Make a new post'
 task :post, [:name] do |t, args|
   if args.name then
@@ -12,6 +24,11 @@ task :post, [:name] do |t, args|
   else
     puts "Name required"
   end
+end
+
+def clean
+  sh 'rm -rf _site'
+  sh 'rm -rf .sass-cache'
 end
 
 def compass(opts='')

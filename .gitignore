@@ -3,6 +3,7 @@
 _site
 _sass/.sass-cache
 .sass-cache
+Gemfile.lock
 
 # SublimeText project files
 /*.sublime-project

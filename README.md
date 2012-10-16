@@ -26,6 +26,7 @@ I've only added two tasks, use `rake -T` to list them:
 
 ```
 rake build		# Build site with Jekyll
+rake clean		# Clean up generated site
 rake post[name]	# Make a new post
 ```
 
