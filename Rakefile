@@ -27,16 +27,17 @@ task :post, [:name] do |t, args|
 end
 
 def clean
-  sh 'rm -rf _site'
-  sh 'rm -rf .sass-cache'
+  system "rm -rf _site"
+  system "rm -rf .sass-cache"
+  system "rm -rf stylesheets"
 end
 
-def compass(opts='')
-  sh 'compass compile -c config.rb --force ' + opts
+def compass
+  system "compass compile -c config.rb"
 end
 
-def jekyll(opts = '')
-  sh 'jekyll ' + opts
+def jekyll
+  system "jekyll build"
 end
 
 def template(name)
