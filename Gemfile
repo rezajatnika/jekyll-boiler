@@ -1,5 +1,10 @@
 source "http://rubygems.org"
 
-gem 'jekyll'
-gem 'rdiscount'
-gem 'compass'
+group :development do
+  gem 'jekyll'
+  gem 'rdiscount'
+  gem 'compass'
+end
+
+gem 'sinatra'
+gem 'unicorn'
