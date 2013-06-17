@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>My Blog Title</title>
+ <link href="http://blog.example.com/atom.xml" rel="self"/>
+ <link href="http://blog.example.com/"/>
+ <updated>2013-06-17T11:30:33+07:00</updated>
+ <id>http://blog.example.com/</id>
+ <author>
+   <name>Me</name>
+   <email>me@example.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Second Post</title>
+   <link href="http://blog.example.com/2012/10/05/second-post.html"/>
+   <updated>2012-10-05T00:07:04+07:00</updated>
+   <id>http://blog.example.com/2012/10/05/second-post</id>
+   <content type="html">&lt;p&gt;This is the second post.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;goodbye&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Goodbye, cruel world!&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>First Post</title>
+   <link href="http://blog.example.com/2012/10/05/first-post.html"/>
+   <updated>2012-10-05T00:05:49+07:00</updated>
+   <id>http://blog.example.com/2012/10/05/first-post</id>
+   <content type="html">&lt;p&gt;This is my first post in Jekyll.&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
