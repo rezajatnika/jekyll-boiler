@@ -27,7 +27,6 @@ task :post, [:name] do |t, args|
 end
 
 def clean
-  system "rm -rf _site"
   system "rm -rf .sass-cache"
   system "rm -rf stylesheets"
 end

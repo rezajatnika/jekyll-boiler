@@ -2,8 +2,9 @@
 
 permalink: date
 pygments: true
-exclude: ['Rakefile', 'README.md', 'config.rb']
+exclude: ['Rakefile', 'README.md', 'config.rb', 'Gemfile', 'Gemfile.lock']
 markdown: rdiscount
+destination: public
 
 # Configuration required for some pages
 
